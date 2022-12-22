@@ -1,0 +1,345 @@
+NAME: Booker.txt
+TYPE: Population
+SIZE: 800,000 observations, 28 variables, 170.9 MB
+ARTICLE TITLE: Sentencing Outcomes in the US Federal Justice System
+
+DESCRIPTIVE ABSTRACT: This app indicates sentencing types based on several case factors.
+
+SOURCES: 
+United States Sentencing Commission Datafiles from Fiscal Years 1996 - 2011
+This data dictionary contains information for all columns and values in clean_booker.csv and eda_booker_report.csv.
+* - not in eda_booker_report.csv
+
+VARIABLE DESCRIPTIONS:
+Commas are used to separate variables in the data file. The data has 28 columns which include ? nominal, ? ordinal, ? discrete, and ? continuous variables (and 1 additional observation identifier).
+
+Order (Discrete): Observation number
+
+0   ACCAP   
+    Indicator of whether Armed Career Criminal status was applied under §4B1.4.    
+    0 = Not Applied
+    1 = Applied
+    * -999 = Missing, Indeterminable, or Inapplicable
+
+1   AGE
+    Identifies the age of the defendant at the time of sentencing. It is generated based on the date of birth provided either in the PSR or at case submission to USSC, and the sentencing date from the J&C.
+    Range: 16 thru 98
+*   -999 = Missing/Indeterminable
+
+2   GGDUM
+    Dummy indicator of aggravating role application pursuant to Aggravated Role Adjustment (§3B1.1). Only valid values were included as having an aggravating role adjustment.
+    0 = No Adjustment Applied
+    1 = Valid Value (1-4) Applied
+*   -999 = Missing, Indeterminable, invalid value applied, or Inapplicable
+
+
+3   BOOKER2
+    Offender’s sentence position relative to the guideline range based on relationship between the sentence and guideline range and the reason(s) given for being outside of the range.
+    0 = Within Range
+    1 = Above Departure
+    2 = Government Sponsored
+    3 = Below Range
+
+4   AROFFAP
+    Indicator to whether Career Offender status was applied under §4B1.1.
+    0 = Not Applied
+    1 = Applied
+*   -999 = Missing or Indeterminable
+
+5   CIRCDIST
+    Districts in the order in which they appear in the Commission’s Sourcebook of Federal Sentencing Statistics.
+    Range: 1 thru 94
+    01 = Dist of Columbia
+    02 = Maine
+    03 = Massachusetts
+    04 = New Hampshire
+    05 = Puerto Rico
+    06 = Rhode Island
+    07 = Connecticut
+    08 = New York East
+    09 = New York North
+    10 = New York South
+    11 = New York West
+    12 = Vermont
+    13 = Delaware
+    14 = New Jersey
+    15 = Penn. East
+    16 = Penn. Mid
+    17 = Penn. West
+    18 = Virgin Islands
+    19 = Maryland
+    20 = N Carolina East
+    21 = N Carolina Mid
+    22 = N Carolina West
+    23 = South Carolina
+    24 = Virginia East
+    25 = Virginia West
+    26 = W Virginia North
+    27 = W Virginia South
+    28 = Louisiana East
+    29 = Louisiana Middle
+    30 = Louisiana West
+    31 = Miss. North
+    32 = Miss. South
+    33 = Texas East
+    34 = Texas North
+    35 = Texas South
+    36 = Texas West
+    37 = Kentucky East
+    38 = Kentucky West
+    39 = Michigan East
+    40 = Michigan West
+    41 = Ohio North
+    42 = Ohio South
+    43 = Tennessee East
+    44 = Tennessee Mid
+    45 = Tennessee West
+    46 = Illinois Cent
+    47 = Illinois North
+    48 = Illinois South
+    49 = Indiana North
+    50 = Indiana South
+    51 = Wisconsin East
+    52 = Wisconsin West
+    53 = Arkansas East
+    54 = Arkansas West
+    55 = Iowa North
+    56 = Iowa South
+    57 = Minnesota
+    58 = Missouri East
+    59 = Missouri West
+    60 = Nebraska
+    61 = North Dakota
+    62 = South Dakota
+    63 = Alaska
+    64 = Arizona
+    65 = California Cent
+    66 = California East
+    67 = California North
+    68 = California South
+    69 = Guam
+    70 = Hawaii
+    71 = Idaho
+    72 = Montana
+    73 = Nevada
+    74 = N Mariana Island
+    75 = Oregon
+    76 = Washington East
+    77 = Washington West
+    78 = Colorado
+    79 = Kansas
+    80 = New Mexico
+    81 = Oklahoma East
+    82 = Oklahoma North
+    83 = Oklahoma West
+    84 = Utah
+    85 = Wyoming
+    86 = Alabama Mid
+    87 = Alabama North
+    88 = Alabama South
+    89 = Florida Mid
+    90 = Florida North
+    91 = Florida South
+    92 = Georgia Mid
+    93 = Georgia North
+    94 = Georgia South
+
+6   MITDUM
+    Dummy variable for mitigating role application. Only valid values were included as having a mitigating role adjustment.
+    0 = No Adjustment Applied
+    1 = Valid Value (1-4) Applied
+*   -999 = Missing, Indeterminable, invalid value applied, or Inapplicable
+
+7   MONCIRC
+    Indicates the judicial circuit in which the defendant was sentenced. 
+    Range: 0 thru 11
+    -999 = Missing, Indeterminable, or Inapplicable
+
+8   ONSEX
+    Indicates the offender's sex.
+    0 = Male
+    1 = Female
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+9   NEWCIT
+    Citizenship of the defendant.
+    0 = U.S.
+    1 = Non-U.S. (Includes Legal and Illegal Aliens)
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+10  NEWCNVTN
+    Indicates whether the case was settled by plea agreement or trial.
+    0 = Plea
+    1 = Trial
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+11  EWEDUC
+    Highest level of education for offender.
+    1 = Less Than H.S. Graduate
+    3 = H.S. Graduate
+    5 = Some College
+    6 = College Graduate
+    7 = Missing, Indeterminable, or Inapplicable
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+12  NEWRACE
+    Race of defendant
+    1 = White
+    2 = Black
+    3 = Hispanic
+    6 = Other  
+    *   -999 = Missing, Indeterminable, or Inapplicable
+
+13  OFFTYPE2
+    Primary offense type for the case generated from the count of conviction with the highest statutory maximum 
+    (in case of a tie, the count with the highest statutory minimum is used). 
+    Note that since the primary offense type is derived from statutes of conviction it may not match up logically with the primary guideline.
+    1 = Murder
+    2 = Manslaughter
+    3 = Kidnapping/Hostage Taking
+    4 = Sexual Abuse
+    5 = Assault
+    6 = Robbery (includes MONOFFTP= 7, other Robbery)
+    9 = Arson
+    10 = Drugs - Trafficking, Manufacturing, and Importing
+    11 = Drugs - Communication Facilities
+    12 = Drugs: - Simple Possession
+    13 = Firearms (Includes Firearms Use, Possession, and Trafficking) (includes MONOFFTP= 14, Firearms possession and
+    Trafficking)
+    15 = Burglary/Breaking and Entering
+    16 = Auto Theft
+    17 = Larceny
+    18 = Fraud
+    19 = Embezzlement
+    20 = Forgery/Counterfeiting
+    21 = Bribery
+    22 = Tax Offenses
+    23 = Money Laundering
+    24 = Racketeering /Extortion (includes MONOFFTP= 8, Extortion)
+    25 = Gambling/Lottery
+    26 = Civil Rights Offenses
+    27 = Immigration
+    28 = Pornography/Prostitution (Value not available after FY2009)
+    29 = Prison Offenses
+    30 = Administration of Justice (Includes accessory after the fact, misprision of felony, and witness tampering)
+    31 = Environmental, Game, Fish, and Wildlife Offenses
+    32 = National Defense Offenses
+    33 = Antitrust Violations
+    34 = Food and Drug Offenses
+    35 = Traffic Violations and Other Offenses 
+        (Includes Other Drug, Environmental, Firearms, Miscellaneous Property Crimes, Violent, and Traffic offenses) (includes MONOFFTP= 35, 36, 37, 38, 39, 40, 41)
+    42 = Child Pornography (Value not available prior FY2010)
+    43 = Obscenity (Value not available prior FY2010)
+    44 = Prostitution (Value not available prior FY2010)
+*   -999 = Missing
+
+14  ERIOD
+    Time Period in which the case was sentenced. This field is generated based on the sentencing date.
+    Period is missing if the sentencing date falls outside one of the specified time frames. 
+    1 = Koon Period (June 13, 1996 through April 30, 2003)
+    2 = PROTECT Act Period (May 1, 2003 through June 24, 2004)
+    3 = Booker Period (January 12, 2005 through December 10, 2007)
+    4 = Gall Period (December 11, 2007 through September 30, 2011)
+    5 = Missing
+*   -999 = Missing
+
+15  PRIMARY
+    Primary drug type involved in the offense standardized across all fiscal years.
+    1 = Cocaine
+    2 = Crack
+    3 = Heroin
+    4 = Marijuana
+    6 = Methamphetamine
+    77 = Other
+    78 = Missing
+*   -999 = Missing
+
+16  QUARTER
+    Fiscal Year quarter in which the case was sentenced. 
+    This field is generated based on the sentencing date. 
+    1 = Oct 1 thru Dec 31
+    2 = Jan 1 thru March 31
+    3 = April 1 thru June 30
+    4 = July 1 thru Sept 30
+
+17  A 
+    This variable is an expanded version of BOOKER2, with the different government sponsored categories broken out. 
+    0 = Within Range
+    1 = Above Range
+    2 = 5K1.1/Substantial Assistance
+    3 = Early Disposition/5K3.1
+    4 = Government Sponsored - Below Range
+    5 = Non-Govt Sponsored Below Range
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+18  SAFEVALVE
+    Indicator of whether or not the “Safety Valve” provision (§5C1.2 or 2D1.1) was applied. Note that this provision is only applicable to drug cases. 
+    0 = Safety Valve Not Applied
+    1 = Safety Valve Applied
+    2 = Missing, Indeterminable, or Inapplicable
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+19  SENTIMP
+    Indicates what type of sentence was given (prison, probation, probation plus alternatives, or prison/split sentence).
+    Alternatives with values of 97(amount of time unknown) are included in categories with alternatives.
+    0 = No Prison/Probation (Fine Only)
+    1 = Prison Only (No Alternatives)
+    2 = Prison + Confinement Conditions (Alternatives, Including Zone C Split Sentences)
+    3 = Probation + Confinement Conditions (Alternatives)
+    4 = Probation Only
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+20  OTCHPTS 
+    The total number of criminal history points applied.
+    Range: 0 thru 99
+    0 = None
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+21  WEAPON 
+    Indicates if there is an SOC weapon enhancement or an 18§924(c) conviction. 
+    0 = No SOC Weapon Enhancement Nor 18§924(c) Charge Present
+    1 = SOC Weapon Enhancement or 18§924(c) Charge Present
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+22  XCRHISSR 
+    Defendant's final criminal history category (I-VI), as determined by the court.
+    Range: 1 thru 6
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+23  LMIN
+    Trumped Guideline Minimum. 
+    This field takes statutory maximum and minimum trumps into account. 
+    Guideline minimums greater than 470 (including life) are trumped at 470 months.
+    Range: 0 thru 470
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+24  FY
+    Indicates the Fiscal Year in which the offender was sentenced.
+    Range: 1996-2011
+
+25  USSCIDN 
+    Unique sequential identification number given to cases upon receipt at USSC.
+    Range: 6 Numbers
+
+26  ENSPLT0
+    The trumped total prison sentence, in months (sentence of 470 months or more, including life, are reported as 470 months), plus alternatives, with zeros (probation). Missing terms are set to " ·".
+    This field includes sentences of time imposed, time served, and §5G1.3 credit. 
+    Alternatives include home detention, community confinement, and intermittent confinement. SENSPLT is missing if any of monitoring's alternative variables is coded 97.
+    This variable does not take sentencing zone into account.
+    Range: 0 thru 470
+    0 = Probation
+*   -999 = Missing, Indeterminable, or Inapplicable
+
+27  GDL 
+    The Chapter Two Guideline applied in a  case. 
+    For some offenses, several  guidelines were combined in this  variable.
+    0 = *2BNew = Fraud Offenses
+    1 = *2D1.1 = Drug Trafficking Offenses (includes 2D1.2)
+    2 = *2G2.1 = Child Pornography Production Offenses
+    3 = *2G2.2 = Child Pornography Possession Offenses (includes 2G2.4)
+    4 = *2L1.1 = Alien Smuggling Offenses
+    5 = *2L1.2 = Illegal Entry Offenses
+    6 = *2K2.1 = Firearms Offenses
+    7 through 162 = *2_#.# = Chapter 2 Guideline Applied All Other Offenses
+
+(Data Descriptions adapted from https://www.ussc.gov/sites/default/files/pdf/research-and-publications/datafiles/Booker_Report_2012_Codebook.pdf in December 2022.)
