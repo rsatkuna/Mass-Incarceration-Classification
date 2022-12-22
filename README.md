@@ -16,7 +16,7 @@ sentencing and to provide recommendations from our findings.
 ---
 ## Data Dictionary
 
-A link to the data dictionary for this project can be found [here](dictionary.txt).
+A link to the Data Dictionary for this project can be found [here](dictionary.txt).
 
 
 ## Summary of Findings and Conclusions 
