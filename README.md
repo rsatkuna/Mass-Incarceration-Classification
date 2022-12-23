@@ -21,12 +21,11 @@ A link to the Data Dictionary for this project can be found [here](dictionary.tx
 
 ## Summary of Findings and Conclusions 
 
-We found that over time, sentencing was becoming less indicative of crime features 
-and more indicative of time of year, sentencing time period, and the district where sentencing took place. 
+This project was completed in two weeks. We found that the data, by time, showed that sentencing was becoming less indicative of crime features 
+and more indicative of fiscal quarters, the most recent Supreme Court decisions related to sentecing, and the district where sentencing took place. 
 There was a focus on guideline minimums put in place by the Booker decision and other decisions similar in nature during the time period of 1996-2011.
 These guideline decisions were weighted greater than crime related features and 
-overall sentencing impact. We also found biases in data collection, where documented verses undocumneted immigrants were grouped together, we found biases
-in gender assumption, as well as in race. Based on this information, our recommendation is the following: 
+overall sentencing impact. We also found biases in data collection, where documented verses undocumneted immigrants were grouped together. Additionally, there were potential assumptions made in overlapping the collected data's use of 'sex' with 'gender, as well as racial categories with ethnic identities. Based on this information, our recommended use cases and future use is as follows: 
 
 1. To inform research for lobbying efforts on federal sentencing guidelines
 2. To target politicians from circuit districts with high bias rates 
